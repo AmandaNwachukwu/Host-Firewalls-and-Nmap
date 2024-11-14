@@ -21,6 +21,14 @@ Now rescan the ports in Linux
 <pre>nmap 10.10.123.169</pre>
 Notice how the scan looks the same because the firewall is enabled
 
-![Image 11-13-24 at 11 52 AM](https://github.com/user-attachments/assets/01da9e71-d99d-435f-a04c-57793f8c6e8b)
-Let's disable the firewall by typing: <pre>netsh advfirewall set allprofiles state off</pre> into PowerShell
+![Image 11-13-24 at 11 55 AM](https://github.com/user-attachments/assets/a3f09c94-f903-4dde-9cd1-78d2d719c89c)
+In PowerShell, let's disable the firewall by typing: <pre>`Set-MpPreference -DisableRealtimeMonitoring $true`</pre>
+In PowerShell, let's disable Antivirus <pre>netsh advfirewall set allprofiles state off</pre> into PowerShell
+Use an easy password such as password1234
+In PoweerShell, type in <pre>ipconfig</pre> to check the IP address
+
+Back to Kali Linux type in <pre>msfconsole -q</pre> ![Image 11-13-24 at 12 02 PM](https://github.com/user-attachments/assets/c46aceda-feae-47a3-82de-730b1b4223d4)
+In another Kali terminal 
+
+
 
